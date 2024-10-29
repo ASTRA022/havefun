@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaveFun - Introduction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+            color: white;
+            text-align: center;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: #1a1a1a; }
+            100% { background-color: #2b2b2b; }
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #00ffcc;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff00cc;
+        }
+        section {
+            margin-top: 80px; /* Space for the fixed header */
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #00ffcc;
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #ff00cc;
+            transition: transform 0.3s, text-shadow 0.3s;
+        }
+        h1:hover, h2:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #ff00cc;
+        }
+        p {
+            line-height: 1.6;
+            transition: color 0.3s;
+        }
+        section:hover p {
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#journey">Our Journey</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to HaveFun!</h1>
+        <p>The future of interactive gaming! We’re transforming the way you experience games by blending fun, investment opportunities, and secure digital interaction. Get ready to explore an app that’s designed for players, creators, and investors alike.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>HaveFun is an upcoming gaming platform built with innovation and inclusivity at its core. Our mission is to empower players and creators by offering tools to create, play, and invest in games while ensuring data security and easy access for all. We're here to reshape the gaming industry with a unique, secure, and immersive experience.</p>
+    </section>
+
+    <section id="journey">
+        <h2>Our Journey</h2>
+        <p>Founded on a shared passion for gaming and digital innovation, we set out to address the common issues in the gaming world. From tackling data security to building an open marketplace for creators and brands, our journey is dedicated to developing an ecosystem that works for everyone in the gaming community.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to connect? We’d love to hear from you! Reach out to us at <a href="mailto:your-email@example.com" style="color: #00ffcc;">your-email@example.com</a> and follow our journey on social media for the latest updates. Let’s bring the future of gaming to life together.</p>
+    </section>
+</body>
+</html>
